@@ -35,7 +35,7 @@ void list_rules(){
 int should_block(const char *ip, int port, int protocol){
   for (int i = 0; i < rule_count; i++){
     if(strcmp(rules[i].ip, ip) == 0 &&
-      rules[i].por == port &&
+      rules[i].port == port &&
       rules[i].protocol == protocol){
       return rules[i].action == 0;
     }

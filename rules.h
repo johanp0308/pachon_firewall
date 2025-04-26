@@ -11,9 +11,9 @@ typedef struct{
   int action;     // 0 = BLOCK, 1 = ALLOW
 } Rule;
 
-void add_rule(conts char *ip, int port, int protocol, int action);
+void add_rule(const char *ip, int port, int protocol, int action);
 void list_rules();
-int should_block(conts char *ip, int port, int protocol);
+int should_block(const char *ip, int port, int protocol);
 
 
 #endif
